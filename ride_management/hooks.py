@@ -21,6 +21,12 @@ app_license = "mit"
 # 	}
 # ]
 
+fixtures = [
+    {"dt": "Ride Booking"},
+    {"dt": "Vehicle Ride"},
+    {"dt": "Customer"},
+    {"dt": "Item"}
+]
 # Includes in <head>
 # ------------------
 

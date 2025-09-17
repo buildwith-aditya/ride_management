@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "format:{vehicle}-{YYYY}-{####}",
+ "creation": "2025-09-17 14:24:26.396546",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_details_section",
+  "vehicle",
+  "make",
+  "column_break_tgnj",
+  "type",
+  "price_per_km",
+  "customer_details_section",
+  "customer",
+  "column_break_doqj",
+  "customer_name",
+  "phone_number",
+  "section_break_rrzn",
+  "services",
+  "section_break_yial",
+  "estimated_km",
+  "total_amount",
+  "column_break_dvut",
+  "booking_date",
+  "return_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Ride",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vehicle.make",
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.price_per_km",
+   "fieldname": "price_per_km",
+   "fieldtype": "Currency",
+   "label": "Price Per Km",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tgnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yial",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "estimated_km",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Estimated Km",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rrzn",
+   "fieldtype": "Section Break",
+   "label": "Services"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Ride Add On"
+  },
+  {
+   "fieldname": "column_break_dvut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_doqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-17 14:42:35.296674",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

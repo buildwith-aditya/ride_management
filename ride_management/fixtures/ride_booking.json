@@ -1,0 +1,35 @@
+[
+ {
+  "booking_date": "2025-09-18",
+  "customer": "Aditya",
+  "customer_name": "Aditya",
+  "docstatus": 0,
+  "doctype": "Ride Booking",
+  "estimated_km": 2.0,
+  "make": "Maruti",
+  "modified": "2025-09-17 14:44:31.600262",
+  "name": "Activa-2025-0001",
+  "phone_number": null,
+  "price_per_km": 150.0,
+  "return_date": "2025-09-19",
+  "services": [
+   {
+    "amount": 1500.0,
+    "item": "Tourist Guides",
+    "parent": "Activa-2025-0001",
+    "parentfield": "services",
+    "parenttype": "Ride Booking"
+   },
+   {
+    "amount": 1000.0,
+    "item": "Travel Insurance",
+    "parent": "Activa-2025-0001",
+    "parentfield": "services",
+    "parenttype": "Ride Booking"
+   }
+  ],
+  "total_amount": 2800.0,
+  "type": "2 vehileer",
+  "vehicle": "Activa"
+ }
+]
