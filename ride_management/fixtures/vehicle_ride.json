@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": null,
+  "make": "Maruti",
+  "modified": "2025-09-17 14:20:22.348219",
+  "name": "Activa",
+  "price_per_km": 150.0,
+  "type": "2 vehileer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": null,
+  "make": "Hero Honda",
+  "modified": "2025-09-17 14:21:29.956844",
+  "name": "Shine",
+  "price_per_km": 150.0,
+  "type": "2 vehileer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": null,
+  "make": "KIA",
+  "modified": "2025-09-17 14:22:03.897865",
+  "name": "Seltoz",
+  "price_per_km": 300.0,
+  "type": "4 vehileer"
+ }
+]
